@@ -14,8 +14,8 @@ connectDB();
 
 // Middleware
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-    // optionally this local server render 'http://localhost:5173'
+    origin: process.env.FRONTEND_URL || process.env.FRONTEND_URL2,
+    // optionally this local server render FRONTEND_URL2
     credentials: true
 }));
 app.use(morgan('combined'));
